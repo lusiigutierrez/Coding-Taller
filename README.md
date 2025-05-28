@@ -42,18 +42,13 @@
 
 Trabajo de desarrollo de capacidades en la empresa – Ingeniería Informática
 
+---
 
-🚀 *Este proyecto es solo el principio de algo grande.*  
-Una pequeña pieza de una visión más amplia que irá creciendo paso a paso.
-
-> 🚀 Este es solo el principio.  
-> Lo mejor está por venir.
+> 🚀 *Este proyecto es solo el principio de algo grande.*
+> Una pequeña pieza de una visión más amplia que irá creciendo paso a paso.
 
 
 
-💫 *Coding Taller es solo un primer paso.*  
-Un pequeño avance hacia un sistema completo que irá creciendo con cada iteración.
 
 
-🔜 *Este proyecto es solo el comienzo de algo mucho más grande.*  
-Una base sólida sobre la que seguiré construyendo paso a paso.
+
