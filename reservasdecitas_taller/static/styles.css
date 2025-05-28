@@ -1,0 +1,1200 @@
+body{
+  background-color: #000000;
+}
+
+.layout {
+  display: flex;
+  background-color: #000000;
+}
+ 
+.cabezera {
+  position: fixed;  /* Mantiene la cabecera fija en la parte superior */
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: transparent;  /* Elimina el fondo completamente */
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  z-index: 1000; 
+  box-shadow: none; /* Elimina la sombra */
+}
+ 
+.cabezera-contenido {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  position: relative;
+  top: -30px; /* Sube el contenido */
+}
+
+.logo img {
+  max-width: 150px; /* Tamaño máximo del logo */
+  height: auto; /* Mantiene la proporción */
+  cursor: pointer;
+}
+
+.auth-botones {
+  display: flex; /* Cambiar de columna a fila */
+  gap: 1rem; /* Separación entre botones */
+  margin-right: 50px;
+}
+ 
+ 
+.auth-botones a {
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 0.5rem 1.5rem;
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a);
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+}
+ 
+ 
+.auth-botones a i {
+  margin-right: 0.5rem; /* Espaciado entre icono y texto */
+}
+ 
+ 
+.auth-botones a:hover {
+  background: linear-gradient(135deg, #1b4cd7, #162d8a); /* Gradiente más oscuro */
+  transform: scale(1.05); /* Pequeño zoom al pasar el ratón */
+}
+ 
+
+.inicio {
+  background: url('https://imagecdn.123inventatuweb.com/a3/0a/a30a37fd-0677-432b-a469-822fd6029d09.png') no-repeat center center;
+  background-color: #000000; /* Fondo negro detrás de la imagen */
+  background-size: contain; /* Mantén las proporciones del logo */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%;
+  height: 100vh; /* Pantalla completa */
+  margin: 0; /* Evita márgenes no deseados */
+  padding: 0;
+  overflow: hidden; /* Asegura que no haya desplazamientos inesperados */
+  margin-top: 80px;
+}
+
+.contenido {
+  margin-top: 6rem; /* Deja espacio para el encabezado fijo */
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7); /* Fondo negro con opacidad */
+  padding: 2rem;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.5); /* Sombra más definida */
+}
+ 
+ 
+.titulo {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #174ea6; /* Azul más oscuro para mejor contraste */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Efecto de sombra para destacar */
+  margin-bottom: 1rem;
+}
+ 
+ 
+.descripcion {
+  font-size: 1.2rem;
+  color: #d6d6d6; /* Gris más claro para mayor visibilidad */
+  margin-bottom: 2rem;
+  line-height: 1.5; /* Mejora la legibilidad */
+}
+ 
+ 
+.boton {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #ffffff; /* Texto blanco */
+  background: linear-gradient(135deg, #3b82f6, #1e3a8a); /* Gradiente azul */
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; /* Indica que es clickeable */
+  animation: bounce 2s infinite; /* Animación de rebote */
+}
+ 
+ 
+.boton:hover {
+  background: linear-gradient(135deg, #1b4cd7, #162d8a); /* Gradiente más oscuro al pasar el ratón */
+  box-shadow: 0 6px 15px rgba(31, 41, 55, 0.8); /* Sombra más intensa */
+  transform: scale(1.08); /* Efecto de zoom al pasar el ratón */
+}
+ 
+ 
+.mensaje-invitado {
+  margin-top: 1rem;
+  font-size: 1rem;
+  color: #d6d6d6;
+  font-style: italic;
+}
+ 
+ 
+ /* Animación del botón */
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-10px);
+  }
+  60% {
+    transform: translateY(-5px);
+  }
+}
+
+.mapa-container {
+  margin-top: 30px;
+  text-align: center;
+}
+ 
+ 
+.mapa-titulo {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #66c2ff;
+  margin-bottom: 10px;
+}
+ 
+ 
+.mapa-container iframe {
+  width: 280px; /* Ajuste del ancho del mapa */
+  height: 150px; /* Ajuste de la altura del mapa */
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+}
+ 
+ 
+ 
+.register-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+
+
+
+legend {
+  font-size: 24px;
+  font-weight: 700;
+  text-align: center;
+  color: #03a9f4;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+ 
+ 
+ /* Labels */
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #b0bec5;
+  font-weight: 600;
+}
+ 
+
+input[type="text"],
+input[type="number"],
+input[type="tel"],
+input[type="email"],
+input[type="password"] {
+ width: 100%;
+ padding: 10px;
+ margin-bottom: 20px;
+ border: 1px solid #03a9f4;
+ border-radius: 5px;
+ background: rgba(255, 255, 255, 0.2);
+ color: #ffffff;
+ font-size: 14px;
+ outline: none;
+ transition: 0.3s ease-in-out;
+}
+
+
+input:focus {
+ border-color: #ffffff;
+ box-shadow: 0 0 5px rgba(3, 169, 244, 0.5);
+}
+
+
+/* Botón */
+.register-button {
+ width: 100%;
+ padding: 12px 0;
+ border: none;
+ border-radius: 5px;
+ background: #03a9f4;
+ color: #ffffff;
+ font-size: 16px;
+ font-weight: 700;
+ cursor: pointer;
+ text-transform: uppercase;
+ transition: 0.3s ease-in-out;
+}
+
+
+.register-button:hover {
+ background: #0288d1;
+ box-shadow: 0 4px 8px rgba(3, 169, 244, 0.3);
+}
+
+.fraseRegistrar {
+  font-size: 1rem;
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 20px;
+}
+ 
+ 
+.fraseRegistrar a {
+  color: #66c2ff;
+  font-weight: bold;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+ 
+ 
+.fraseRegistrar a:hover {
+  color: #0099ff;
+  text-decoration: underline;
+}
+ 
+ 
+.fondoFormularios {
+  background-color: #000000; /* Fondo negro detrás de la imagen */
+  background-size: contain; /* Mantén las proporciones del logo */
+  display: flex;
+  justify-content: center; /* Centra el contenido horizontalmente */
+  align-items: center; /* Centra el contenido verticalmente */
+  width: 100%;
+  height: 100vh; /* Pantalla completa */
+  margin: 0; /* Evita márgenes no deseados */
+  padding: 0;
+  overflow: hidden; /* Asegura que no haya desplazamientos inesperados */
+  margin-top: 80px;
+}
+
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh; /* Ocupa toda la pantalla */
+}
+
+.reserva-form {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+}
+ 
+.reserva-form h1 {
+  font-size: 1.6rem; /* Tamaño reducido del título */
+  color: #66c2ff;
+  margin-bottom: 15px; /* Menor espaciado inferior */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+ 
+ 
+ /* Campos de entrada */
+.reserva-form input {
+  width: 100%; /* Ajusta al ancho completo del contenedor */
+  padding: 10px; /* Reduce el espaciado interno */
+  margin: 10px 0; /* Menor espaciado entre campos */
+  border: none;
+  border-radius: 6px; /* Bordes ligeramente redondeados */
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 0.9rem; /* Tamaño del texto más compacto */
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
+}
+ 
+ 
+.reserva-form input::placeholder {
+  color: #b0b0b0;
+}
+ 
+ 
+.reserva-form input:focus {
+  outline: none;
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 6px #66c2ff;
+}
+ 
+ 
+ /* Botón de reserva */
+.reserva-form button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px; /* Menor espaciado superior */
+  background: linear-gradient(90deg, #0066b2, #003766);
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  transition: all 0.3s ease;
+}
+ 
+ 
+.reserva-form  button:hover {
+  background: linear-gradient(90deg, #0099ff, #005b99);
+}
+ 
+ 
+.reserva-form button:active {
+  transform: scale(0.98);
+  background: #005b99;
+}
+
+
+.field-and-button {
+ display: flex;
+ flex-direction: column;
+ align-items: flex-start;
+ gap: 10px;
+}
+
+.info-message {
+  margin-top: 5px;
+  color: #ffffff;
+  background: rgba(0, 102, 178, 0.8);
+  font-size: 0.8rem;
+  padding: 8px;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  line-height: 1.3;
+}
+
+.info-button {
+  background-color: #0066b2;
+  color: #ffffff;
+  border: none;
+  border-radius: 50%;
+  width: 25px; /* Tamaño más compacto */
+  height: 25px;
+  font-size: 0.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+ 
+ 
+.info-button:hover {
+  background-color: #004b8a;
+  transform: scale(1.1);
+}
+
+.registro-final {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  height: 100vh; /* Para que ocupe toda la pantalla */
+  background: rgba(255, 255, 255, 0.12);
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+
+.registro-titulo {
+  font-size: 28px;
+  font-weight: 700;
+  color: #fff; /* Blanco para contraste */
+  margin-bottom: 15px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Texto descriptivo */
+.registro-descripcion {
+  font-size: 18px;
+  color: #ddd; /* Gris claro para legibilidad */
+  margin-bottom: 25px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+/* Botón con mejor efecto */
+.registro-boton {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 6px;
+  background: linear-gradient(135deg, #ff4444, #cc0000); /* Degradado rojo */
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+  box-shadow: 0 4px 10px rgba(255, 0, 0, 0.3);
+}
+
+/* Efecto hover del botón */
+.registro-boton:hover {
+  background: linear-gradient(135deg, #cc0000, #990000);
+  box-shadow: 0 6px 15px rgba(255, 0, 0, 0.4);
+  transform: scale(1.05);
+}
+
+
+
+
+
+/* Contenedor principal */
+.perfil-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Título principal */
+.perfil-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #66c2ff; /* Azul claro */
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0 4px 10px rgba(102, 194, 255, 0.5);
+}
+
+/* Subtítulo */
+.perfil-subtitulo {
+  font-size: 1.8rem;
+  color: #ffd700; /* Amarillo */
+  margin-bottom: 20px;
+}
+
+/* Contenedor de citas */
+.citas-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Tarjetas de citas con fondo oscuro */
+.cita-item {
+  background: rgba(30, 30, 30, 0.9); /* Gris oscuro con transparencia */
+  padding: 20px;
+  border-radius: 10px;
+  width: 250px;
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.1);
+  transition: all 0.3s ease-in-out;
+  text-align: left;
+  border-left: 5px solid rgba(102, 194, 255, 0.5);
+}
+
+/* Efecto hover */
+.cita-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(102, 194, 255, 0.3);
+}
+
+/* Texto dentro de las tarjetas */
+.cita-item p {
+  color: #ffffff; /* Texto blanco */
+  font-size: 1rem;
+}
+
+/* Estados de las citas con colores oscuros */
+.estado-cita {
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 8px;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.estado-pendiente {
+  color: #ffcc00; /* Amarillo */
+  background: rgba(255, 204, 0, 0.2);
+  border-left: 5px solid #ffcc00;
+}
+
+.estado-aceptada {
+  color: #28a745; /* Verde */
+  background: rgba(40, 167, 69, 0.2);
+  border-left: 5px solid #28a745;
+}
+
+.estado-rechazada {
+  color: #dc3545; /* Rojo */
+  background: rgba(220, 53, 69, 0.2);
+  border-left: 5px solid #dc3545;
+}
+.estado-reprogramada {
+  color: #dc35cb; /* Rojo */
+  background: rgba(232, 13, 185, 0.2);
+  border-left: 5px solid #e817ad;
+}
+
+/* Botones oscuros con efecto */
+.editar-perfil-boton {
+  display: inline-block;
+  text-decoration: none;
+  color: #ffffff;
+  background: linear-gradient(90deg, #003766, #005b99);
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 1.1rem;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 162, 255, 0.5);
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.editar-perfil-boton:hover {
+  background: linear-gradient(90deg, #0099ff, #005b99);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 162, 255, 0.8);
+}
+
+.editar-boton {
+  background: linear-gradient(90deg, #0066b2, #003766);
+  color: #fff;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+ 
+ 
+.editar-boton:hover {
+  background: linear-gradient(90deg, #0099ff, #005b99);
+}
+ 
+.volver-atras {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff4444;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+ 
+ 
+.volver-atras:hover {
+  background: #cc0000;
+}
+ 
+.editar-perfil-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Ocupa toda la pantalla */
+  width: 100%;
+  background-color: #000; /* Fondo negro */
+}
+
+.editar-perfil-content {
+  background: rgba(30, 30, 30, 0.9); /* Gris oscuro con transparencia */
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(255, 255, 255, 0.1);
+  text-align: center;
+  max-width: 400px;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+input[type="date"],
+input[type="time"] {
+  text-align: center;
+  font-weight: bold;
+  color: #66c2ff;
+  border: 2px solid #66c2ff;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  cursor: pointer;
+}
+
+
+.subtitulo-cita {
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: #ffd700;
+  margin-bottom: 20px;
+}
+ 
+.resumen-cita {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.1rem;
+}
+ 
+ 
+.resumen-cita li {
+  background: rgba(255, 255, 255, 0.9);
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border-left: 5px solid #1e3a8a;
+  color: #000;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+ 
+ 
+.resumen-cita li:hover {
+  background: rgba(255, 255, 255, 1);
+  transform: translateX(5px);
+}
+ 
+ 
+.resumen-cita li strong {
+  color: #1e3a8a;
+}
+ 
+ 
+
+.return-button {
+  display: inline-block;
+  text-decoration: none; /* Elimina el subrayado */
+  color: #ffffff; /* Color del texto */
+  background: linear-gradient(90deg, #0066b2, #003766); /* Gradiente del fondo */
+  padding: 12px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 8px; /* Bordes redondeados */
+  text-align: center;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Sombra */
+  cursor: pointer; /* Cambia el cursor al pasar el ratón */
+}
+ 
+ 
+.return-button:hover {
+  background: linear-gradient(90deg, #0099ff, #005b99); /* Cambia el gradiente al pasar el ratón */
+  transform: scale(1.05); /* Efecto de zoom */
+}
+ 
+ 
+.return-button:active {
+  transform: scale(0.98); /* Efecto al hacer clic */
+  background: #005b99;
+}
+ 
+ 
+
+@media (max-width: 600px) {
+  .reserva-container {
+    padding: 20px;
+  }
+}
+ 
+
+
+
+
+.admin-dashboard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000;
+  padding: 20px;
+}
+
+/* Mejoras en el título */
+.perfil-titulo {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #66c2ff;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  text-shadow: 0px 4px 10px rgba(102, 194, 255, 0.8);
+}
+.estadisticas-container {
+  width: 80%;
+  max-width: 1000px;
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 20px;
+  background: rgba(30, 30, 30, 0.9);
+  border-radius: 10px;
+  box-shadow: 0px 8px 20px rgba(255, 255, 255, 0.1);
+}
+
+/* Título de las estadísticas */
+.estadisticas-titulo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #ffd700;
+  text-shadow: 0px 4px 8px rgba(255, 215, 0, 0.5);
+  margin-bottom: 15px;
+}
+
+/* Grid de estadísticas */
+.estadisticas-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+/* Estilos individuales de cada estadística */
+.estadistica-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Colores específicos por estado */
+.total { color: #ffffff; border-left: 5px solid #66c2ff; }
+.pendientes { color: #ffa500; border-left: 5px solid #ffa500; }
+.aceptadas { color: #28a745; border-left: 5px solid #28a745; }
+.rechazadas { color: #dc3545; border-left: 5px solid #dc3545; }
+
+/* Asegurar que el texto de las estadísticas se vea bien */
+.estadistica-item h3 {
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+}
+
+/* Botón de Aceptar */
+.aceptar-btn {
+  background: linear-gradient(90deg, #28a745, #218838);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(40, 167, 69, 0.5);
+  text-transform: uppercase;
+}
+
+/* Efecto hover para Aceptar */
+.aceptar-btn:hover {
+  background: linear-gradient(90deg, #218838, #1e7e34);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(40, 167, 69, 0.7);
+}
+
+/* Botón de Rechazar */
+.rechazar-btn {
+  background: linear-gradient(90deg, #dc3545, #c82333);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(220, 53, 69, 0.5);
+  text-transform: uppercase;
+}
+
+/* Efecto hover para Rechazar */
+.rechazar-btn:hover {
+  background: linear-gradient(90deg, #c82333, #a71d2a);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(220, 53, 69, 0.7);
+}
+
+/* Espaciado entre botones */
+.botones-container {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+/* Contenedor del filtro */
+.filtro-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  background: rgba(30, 30, 30, 0.95);
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(255, 255, 255, 0.1);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 1000px;
+}
+
+/* Centrar el input y select dentro del filtro */
+.filtro-container input,
+.filtro-container select {
+  flex: 1;
+  padding: 12px;
+  border-radius: 6px;
+  border: 2px solid #66c2ff;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  font-size: 1rem;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  text-align: center;
+}
+
+/* Placeholder de input más visible */
+.filtro-container input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+/* Estilos cuando el usuario interactúa */
+.filtro-container input:focus,
+.filtro-container select:focus {
+  border-color: #0099ff;
+  box-shadow: 0 0 6px rgba(102, 194, 255, 0.8);
+}
+
+/* Selector estilizado */
+.filtro-container select {
+  max-width: 200px;
+  cursor: pointer;
+}
+
+/* Opciones del select */
+.filtro-container select option {
+  background: #222;
+  color: white;
+}
+
+
+.reprogramar-btn {
+  background: linear-gradient(90deg, #ff00b7, #fe3cca);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(255, 0, 162, 0.5);
+  text-transform: uppercase;
+}
+
+/* Efecto hover para Reprogramar */
+.reprogramar-btn:hover {
+  background: linear-gradient(90deg, #f824dc, #c70074);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(255, 0, 191, 0.7);
+}
+
+.reprogramar-btn {
+  background: #ff00d4;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.reprogramar-btn:hover {
+  background: #e60096;
+}
+
+.reprogramar-form {
+  margin-top: 10px;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.reprogramar-form label {
+  display: block;
+  font-size: 14px;
+  color: white;
+  margin-bottom: 5px;
+}
+
+.reprogramar-form input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ff00e6;
+  border-radius: 5px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+}
+
+.confirmar-reprogramacion-btn {
+  background: #4caf50;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin-top: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s ease-in-out;
+}
+
+.confirmar-reprogramacion-btn:hover {
+  background: #45a049;
+}
+
+
+.ver-inventario {
+  display: inline-block;
+  margin-top: 20px;
+  text-decoration: none;
+  color: #ffffff;
+  background: #ff4470;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s ease;
+}
+ 
+ 
+.ver-inventario:hover {
+  background: #dd1840;
+}
+
+
+
+
+
+
+
+
+
+.fondoinventario {
+  padding-top: 180px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #000;
+  color: #f0f0f0;
+}
+
+.contenedor-inventario {
+  width: 100%;
+  max-width: 800px;
+  padding: 1rem;
+}
+
+.titulo-inventario {
+  position: fixed;
+  top: 30px;
+  width: 100%;
+  background-color: #000;
+  text-align: center;
+  color: #1f4ed8;
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1rem 0;
+  z-index: 999;
+  border-bottom: 2px solid #1f4ed8;
+}
+
+.inventario-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.inventario-lista {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.inventario-item {
+  background-color: #e4e4e4;
+  color: #000;
+  padding: 1rem;
+  border-radius: 10px;
+  list-style: none;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.inventario-item hr {
+  border: none;
+  border-top: 1px solid #ccc;
+  margin-top: 10px;
+}
+
+.boton-volver,
+.boton-anadir {
+  background-color: #1f4ed8;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  text-decoration: none;
+  margin: 0.5rem;
+  transition: background-color 0.3s;
+}
+
+.boton-volver:hover,
+.boton-anadir:hover {
+  background-color: #163dbf;
+}
+
+@media (max-width: 600px) {
+  .titulo-inventario {
+    font-size: 1.8rem;
+  }
+
+  .inventario-item {
+    padding: 0.8rem;
+  }
+
+  .boton-volver,
+  .boton-anadir {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+
+
+
+
+
+.formulario-inventario {
+  background-color: #121212;
+  padding: 2.5rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 90%;
+  margin: 0 auto;
+  box-shadow: 0 0 25px rgba(31, 78, 216, 0.4);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem; 
+  color: #f0f0f0;
+}
+
+.formulario-inventario label {
+  font-weight: bold;
+  color: #3063fa;
+  font-size: 1.05rem;
+  margin-bottom: 0.3rem; 
+}
+
+.formulario-inventario input {
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 8px;
+  background-color: #2c2c2c;
+  color: #f0f0f0;
+  width: 100%;
+  box-sizing: border-box;
+  display: block;
+}
+
+.boton-formulario {
+  background-color: #1f4ed8;
+  color: #fff;
+  border: none;
+  padding: 0.8rem;
+  font-weight: bold;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: background-color 0.3s;
+}
+
+.boton-formulario:hover {
+  background-color: #163dbf;
+}
+
+.boton-volver {
+  display: inline-block;
+  margin-top: 1rem;
+  text-align: center;
+  padding: 0.7rem 1.5rem;
+  background-color: transparent;
+  border: 2px solid #1f4ed8;
+  border-radius: 8px;
+  color: #1f4ed8;
+  font-weight: bold;
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.boton-volver:hover {
+  background-color: #1f4ed8;
+  color: #fff;
+}
+
+@media (max-width: 600px) {
+  .formulario-inventario {
+    padding: 1.5rem;
+  }
+
+  .boton-formulario,
+  .boton-volver {
+    width: 100%;
+  }
+}
