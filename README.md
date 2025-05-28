@@ -42,3 +42,7 @@ Lucía Gutiérrez Cano
 
 Trabajo de desarrollo de capacidades en la empresa – Ingeniería Informática
 
+
+🚀 *Este proyecto es solo el principio de algo grande.*  
+Una pequeña pieza de una visión más amplia que irá creciendo paso a paso.
+
