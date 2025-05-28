@@ -32,12 +32,13 @@
 | Framework        | [Fresh (Deno)](https://fresh.deno.dev/) |
 | Backend          | Deno                        |
 | Base de datos    | MongoDB                     |
-| Estilos          | Tailwind CSS                |
+| Estilos          | CSS                         |
 | Despliegue       | Deno Deploy                 |
 
 ---
 
 ## 👩‍💻 Autora
 Lucía Gutiérrez Cano
+
 Trabajo de desarrollo de capacidades en la empresa – Ingeniería Informática
 
